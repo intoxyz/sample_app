@@ -29,7 +29,7 @@ section h1 {
 /* Links */
 
 a {
-  color: #9ab;
+  color: #736357;
   text-decoration: none;
 }
 
@@ -160,4 +160,28 @@ div.field, div.actions {
 #error_explanation ul li {
   font-size: 12px;
   list-style: square;
+}
+
+/* User show page */
+
+table.profile {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+td.main {
+  width: 65%;
+  padding: 1em;
+}
+
+td.sidebar {
+  width: 30%;
+  padding: 1em;
+  vertical-align: top;
+  background: #9ab;
+}
+
+.profile img.gravatar {
+  border: 1px solid black;
+  margin-bottom: -15px;
 }
