@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-<h1>Sample App</h1>
-
-<p>
-  This is the home page for the
-  <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-  sample application.
-</p>
-
-	<%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
+  <% main = image_tag("main.jpg", :alt => "Main Page") %>
+  <%= link_to main, place_path %>
+  <BR>
+  <pre><p align="center"> <font color=#666666> A  Walk Around The Corner</font>
+  
+  <%= link_to "More", place_path %>   |   <%= link_to "About", contact_path %> 
+  <Font size='1'>
+  Copyright (c) <a href="mailto:wkwak@andrew.cmu.edu">intoxymaster</a>  All Rights Reserved.</pre></p>
+  </Font>
 </html>
 
 

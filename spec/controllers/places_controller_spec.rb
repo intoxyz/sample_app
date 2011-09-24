@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe UsersController do
+describe PlacesController do
 
   describe "GET 'new'" do
     it "should be successful" do

@@ -1,5 +1,5 @@
 .container {
-  width: 620px;
+  width: 710px;
 }
 
 body {
@@ -18,7 +18,7 @@ header img {
 section {
   margin-top: 1em;
   font-size: 120%;
-  padding: 10px;
+  padding: 60px;
   background: #999999;
 }
 
@@ -29,13 +29,13 @@ section h1 {
 /* Links */
 
 a {
-  color: #9ab;
+  color: #736357;
   text-decoration: none;
 }
 
 a:hover {
-  color: #736357;
-  text-decoration: none;
+  color: white;
+  text-decoration: underline;
 }
 
 a:visited {
@@ -75,8 +75,8 @@ nav ul li a:visited {
 }
 
 nav ul li a:hover {
-  color: #ccb5a1;
-  text-decoration: none;
+  color: white;
+  text-decoration: underline;
 }
 
 /* Sign up button */
@@ -105,7 +105,7 @@ a.signup_button {
 footer {
   text-align: center;
   margin-top: 10px;
-  width: 610px;
+  width: 710px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -114,7 +114,3 @@ footer nav {
   float: none;
 }
 
-/* style1 */
-s {
-	color: #6c859d;
-}
