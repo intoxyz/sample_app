@@ -114,7 +114,6 @@ footer nav {
   float: none;
 }
 
-/* style1 */
-s {
-	color: #6c859d;
+div.field, div.actions {
+  margin-bottom: 10px;
 }
