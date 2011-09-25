@@ -20,9 +20,10 @@ class PagesController < ApplicationController
     @micropost = Micropost.new if signed_in?
   end
 
-  def place
+  def places
     @title = "Places"
   	@pic = Places.find(2)
   end
-  
+
+
 end
