@@ -1,6 +1,7 @@
-<Font color="#9ab",Font size="6",Font face = "courier new">
-<pre> Edit user</pre></Font>
-
+<p><Font color="#9ab",Font size="6",Font face = "courier new">
+<pre> Edit user
+<hr color=white width=90%></pre></Font>
+</p>
 <%= form_for(@user) do |f| %>
   <%= render 'shared/error_messages', :object => f.object %>
   <div class="field">
@@ -26,5 +27,9 @@
 
 <div>
   <%= gravatar_for @user %>
-  <a href="http://gravatar.com/emails">change</a>
+  	<Font size="3",Font face = "courier new">
+    <a href="http://gravatar.com/emails"> Update Photo ■</a></Font>
 </div>
+
+
+

@@ -1,8 +1,8 @@
 <% if signed_in? %>
   <table class="front" summary="For signed-in users">
     <tr>
-      <td class="main">
-        <h1 class="micropost">What's up?</h1>
+      <td class="main"><p><Font color="#9ab",Font size="6",Font face = "courier new">
+        <pre> What's up?<hr color=white width=50%></pre></Font></p>
         <%= render 'shared/micropost_form' %>
       </td>
       <td class="sidebar round">
@@ -17,6 +17,8 @@
 
 	<%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
 	<br>
-	<pre>   Browsing more, before Sign up <%= link_to "▶", place_path %></pre>
+	<Font size="3",Font face = "courier new">
+	<pre>   Already Signed up? <%= link_to "Comments ▶", comment_path %></pre>
+	</Font>
 </p>
 <% end %>

@@ -13,3 +13,4 @@ class CreateMicroposts < ActiveRecord::Migration
     drop_table :microposts
   end
 end
+
