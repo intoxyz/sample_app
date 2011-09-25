@@ -1,12 +1,22 @@
-<!DOCTYPE html>
-<html>
-    <p><Font color="#9ab",Font size="6",Font face = "courier new"><pre> Sign up for Comments</pre></Font>
+<% if signed_in? %>
+  <table class="front" summary="For signed-in users">
+    <tr>
+      <td class="main">
+        <h1 class="micropost">What's up?</h1>
+        <%= render 'shared/micropost_form' %>
+      </td>
+      <td class="sidebar round">
+        <%= render 'shared/user_info' %>
+      </td>
+    </tr>
+  </table>
+<% else %>
+<p><Font color="#9ab",Font size="6",Font face = "courier new"><pre> Sign up for Comments</pre></Font>
     <br>
     <br>
 
 	<%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
 	<br>
-	<pre>   Otherwise, contact me at <%= link_to "This page", contact_path %></pre>
+	<pre>   Browsing more, before Sign up <%= link_to "▶", place_path %></pre>
 </p>
-	
-</html>
+<% end %>
