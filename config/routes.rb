@@ -31,6 +31,7 @@ SampleApp::Application.routes.draw do
   match '/contact', :to => 'pages#contact'
   match '/places',   :to => 'pages#place'
 #  match '/help',    :to => 'pages#help'
+  match '/bbout',    :to => 'pages#about'
   match '/comment', :to => 'pages#comment'
 
   match '/london',   :to => 'places#london'
