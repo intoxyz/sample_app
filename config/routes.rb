@@ -1,8 +1,23 @@
 SampleApp::Application.routes.draw do
   get "sessions/new"
 
- # get "places/new"
- # get "users/new"
+  get "pages/home"
+
+  get "pages/place"
+
+  get "pages/contact"
+
+  get "pages/help"
+
+  get "pages/comment"
+
+  get "places/london"
+  get "places/paris"
+  get "places/swiss"
+  get "places/seoul"
+  get "places/us"
+  get "places/hk"
+  get "places/jam"
   
   resources :users
   resources :sessions, :only => [:new, :create, :destroy]
@@ -29,23 +44,7 @@ SampleApp::Application.routes.draw do
 	root :to => 'pages#home'
   
   
-  get "pages/home"
-  
-  get "pages/place"
-  
-  get "pages/contact"
-  
-  get "pages/help"
-  
-  get "pages/comment"
-  
-  get "places/london"
-  get "places/paris"
-  get "places/swiss"
-  get "places/seoul"
-  get "places/us"
-  get "places/hk"
-  get "places/jam"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
