@@ -21,7 +21,8 @@ class PagesController < ApplicationController
   end
 
   def place
-  	@title = "Places"
+    @title = "Places"
+  	@pic = Places.find(2)
   end
   
 end

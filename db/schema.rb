@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110925021355) do
+ActiveRecord::Schema.define(:version => 20110925175342) do
 
   create_table "microposts", :force => true do |t|
     t.string   "content"
@@ -21,8 +21,8 @@ ActiveRecord::Schema.define(:version => 20110925021355) do
 
   create_table "places", :force => true do |t|
     t.string   "what"
-    t.string   "where"
-    t.string   "when"
+    t.string   "city"
+    t.string   "year"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

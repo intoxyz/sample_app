@@ -13,9 +13,17 @@ SampleApp::Application.routes.draw do
   match '/signout', :to => 'sessions#destroy'
   
   match '/contact', :to => 'pages#contact'
-  match '/place',   :to => 'pages#place'
+  match '/places',   :to => 'pages#place'
   match '/help',    :to => 'pages#help'
   match '/comment', :to => 'pages#comment'
+
+  match '/london',   :to => 'places#london'
+  match '/paris',    :to => 'places#paris'
+  match '/switzerland',    :to => 'places#swiss'
+  match '/seoul',   :to => 'places#seoul'
+  match '/usa',   :to => 'places#us'
+  match '/hongkong',   :to => 'places#hk'
+  match '/others',   :to => 'places#jam'
 
 	root :to => 'pages#home'
   
