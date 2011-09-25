@@ -38,7 +38,13 @@ SampleApp::Application.routes.draw do
   
   get "pages/comment"
   
-
+  get "places/london"
+  get "places/paris"
+  get "places/swiss"
+  get "places/seoul"
+  get "places/us"
+  get "places/hk"
+  get "places/jam"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
