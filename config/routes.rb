@@ -29,7 +29,7 @@ SampleApp::Application.routes.draw do
   match '/signout', :to => 'sessions#destroy'
   
   match '/contact', :to => 'pages#contact'
-  match '/places',   :to => 'pages#place'
+  match '/location',   :to => 'pages#place'
 #  match '/help',    :to => 'pages#help'
 #  match '/bbout',    :to => 'pages#about'
   match '/comment', :to => 'pages#comment'
